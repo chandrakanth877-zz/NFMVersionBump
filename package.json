@@ -1,0 +1,15 @@
+{
+  "name": "nfmversionbump",
+  "version": "1.0.0",
+  "description": "version counter using csproj or vbproj file",
+  "scripts": {
+    "package": "npm run clean && tfx extension create  --rev-version",
+    "gallery-publish": "tfx extension publish --rev-version",
+    "clean": "rimraf ./*.vsix"
+  },
+  "devDependencies": {
+    "tfx-cli": "0.6.3"
+  },
+  "author": "chandrakanth",
+  "license": "ISC"
+}

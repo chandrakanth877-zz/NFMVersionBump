@@ -1,0 +1,61 @@
+{
+    "manifestVersion": 1,
+    "id": "nfmversionbump",
+    "name": "NFM Version bump using Project file",
+    "version": "0.0.20",
+    "publisher": "chandrakanth",
+    "public": true, 
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Build Tools for Increment Minor and Major counter using csproj file",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "icon.png"
+      },
+    "scopes": [
+        "vso.build_execute"
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "tags": [
+        "Build", "Version", "Counter", "Pipeline", "Azure DevOps",
+        "Application Version",
+        "vbproj",
+        "csproj",
+        "Variables"
+      ],
+    "files": [
+        {
+            "path": "buildAndReleaseTask/run-task.ps1"
+        },
+        {
+            "path": "buildAndReleaseTask/task.json"
+        },
+        {
+            "path": "buildAndReleaseTask/icon.png"
+        },
+        {
+            "path": "buildAndReleaseTask/ps_modules/vststasksdk"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "nfmversionbump",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ]
+}
